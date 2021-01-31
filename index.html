@@ -33,8 +33,23 @@
                 <a class="navbar-brand text-center" href="/"><img src="static/img/Tema_ORG.png" alt="" class="header-img"></a>
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#services">Servicios</a>
+                        <li class="nav-item dropdown">
+                            <a
+                              class="nav-link dropdown-toggle"
+                              href="#!"
+                              id="navbarDropdown"
+                              role="button"
+                              data-mdb-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Servicios
+                            </a>
+                            <!-- Dropdown menu -->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#preventivo">Preventivo</a></li>
+                              <li><a class="dropdown-item" href="#calibracion">Calibración</a></li>
+                              <li><a class="dropdown-item" href="#inspeccion">Inspección</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#about">Quienes Somos</a>
@@ -167,19 +182,23 @@
         </div>
     </div>
     <div class="fixed-action-btn text-center">
-        <a class="btn btn-cprimary text-white btn-floating" target="_blanck" href="https://api.whatsapp.com/send?phone=4423050896&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?">
+        <a class="btn btn-cprimary text-white btn-floating" target="_blanck" href="https://api.whatsapp.com/send?phone=554423050896&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?">
             <i class="fab fa-whatsapp display-7"></i>
         </a>
     </div>
-    <footer class="bg-light text-center text-lg-start">
+    <div class="fixed-action-btn">
+        <a class="btn btn-cprimary text-white btn-floating" target="_blanck" href="https://api.whatsapp.com/send?phone=554423050896&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?">
+            <i class="fab fa-whatsapp display-7"></i>
+        </a>
+    </div>
+    <footer class="bg-cacent text-lg-start">
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        <div class="text-center p-3 bg-csecondary">
           © 2020 Copyright:
-          <a class="text-dark" href="https://mdbootstrap.com/">BASCULAS TEMA</a>
+          <a class="text-white" href="https://mdbootstrap.com/">BASCULAS TEMA</a>
         </div>
-        <!-- Copyright -->
-      </footer>
-    <script src="https://code.jquery.com/jquery-3d2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    </footer>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
+
 </body>
 </html>
