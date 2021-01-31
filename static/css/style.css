@@ -1,7 +1,7 @@
 :root{
     --secondary-color: #1d3b7a;
     --primary-color: #43ac34;
-    --acent-color: #03A9F4;
+    --acent-color: #20428a;
     --backgound-primary: #f5f8fd;
 }
 
@@ -11,6 +11,18 @@ body{
     color: #413e66;
     justify-content: center;
     align-items: center;
+}
+.bg-cprimary{
+    background-color: var(--primary-color);
+    color: var(--backgound-primary);
+}
+.bg-csecondary{
+    background-color: var(--secondary-color);
+    color: var(--backgound-primary);
+}
+.bg-cacent{
+    background-color: var(--acent-color);
+    color: var(--backgound-primary);
 }
 .navbar{
     background: #fafafa;
@@ -75,6 +87,9 @@ section{
     position: relative;
     text-align: justify;
     width: 100%;
+}
+.display-7{
+    font-size: 2em;
 }
 .mxw800p{
     max-width: 800px;
