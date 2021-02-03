@@ -12,188 +12,266 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css" rel="stylesheet"/>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid text-center">
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-mdb-toggle="collapse"
-                    data-mdb-target="#navbar"
-                    aria-controls="navbar"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <a class="navbar-brand text-center" href="/"><img src="static/img/Tema_ORG.png" alt="" class="header-img"></a>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a
-                              class="nav-link dropdown-toggle"
-                              href="#!"
-                              id="navbarDropdown"
-                              role="button"
-                              data-mdb-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              Servicios
-                            </a>
-                            <!-- Dropdown menu -->
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="#preventivo">Preventivo</a></li>
-                              <li><a class="dropdown-item" href="#calibracion">Calibración</a></li>
-                              <li><a class="dropdown-item" href="#inspeccion">Inspección</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#about">Quienes Somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Nuestro Trabajo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                    </ul>
+    <nav class="navbar fixed-top navbar-expand-lg bg-white">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+                <div class="col">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars navbar-toggler-icon text-Tprimary"></i>
+                    </button>
+                </div>
+                <div class="col text-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="/static/img/Tema_ORG.png" alt="" class="img-fluid w-50">
+                    </a>
                 </div>
             </div>
-        </nav>
-    </div>
-    <div class="banner text-center">
-        <div class="content">
-            <h1 class="display-3"><strong>Basculas <span class="text-success strong">TEMA</strong></span></h1>
-            <h2>Empresa orgullosamente Méxicana</h2>
+            <div class="collapse navbar-collapse text-center align-items-center justify-content-center" id="navbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#services">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Nuestro trabajo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="d-flex" id="banner">
+        <div class="container text-center">
+            <div class="row flex-sm-row-reverse">
+                <div class="col-md-5">
+                    <img src="static/img/Camion.png" alt="" class="img-fluid" style="transform:scaleX(-1);">
+                </div>
+                <div class="col-md-7">
+                    <h1 class="display-3"><strong>Basculas <span class="text-Tsecondary strong">TEMA</strong></span></h1>
+                    <h2>Empresa orgullosamente Méxicana</h2>
+                    <p class="text-justify">
+                        <strong>BÁSCULAS Y METROLOGÍA APLICADA TEMA S.A. DE C.V.</strong>, es creada con la 
+                        finalidad de satisfacer las necesidades de nuestros clientes. Sabemos la importancia de un
+                        sistema de pesaje confiable por eso contamos con personal con amplia experencia en el campo 
+                        y vocación de servico.
+                    </p>
+                    <h4>¡Conoce sobre nuestros servicios!</h4>
+                    <div class="d-inline">
+                        <a href="/servicios.html" class="btn btn-Tprimary mr-2">Calibración</a>
+                        <a href="/servicios.html" class="btn btn-Tsecondary">Inspección</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <h2 class="text-center display-5"><strong>Nuestros servicios</strong></h2>
             <br>
-            <p>
-                <strong>BÁSCULAS TEMA S.A. DE C.V.</strong>, es creada con la 
-                finalidad de satisfacer las necesidades de nuestros clientes.
-                Contamos con personal con amplia experencia en el campo y vocación de servico.
-            </p>
-            <h4>¡Conoce sobre nuestros servicios!</h4>
-            <a href="/servicios.html" class="btn btn-success btn-cprimary btn-lg">Servicios</a>
-            <a href="#about" class="btn btn-info btn-secondary btn-lg">Nosotros</a>
-        </div>
-        <img src="static/img/Camion_Ejmp.png" alt="" class="w-50 image">
-    </div>
-    <section class="sec" id="services">
-        <div class="content">
-            <h2 class="text-center">Servicios</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card shadow">
-                            <div class="bg-image hover-overlay ripple">
-                                <img src="static/img/svg/maintenance.svg" alt="" class="w-25 img-fluid">
-                                <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Mantenimiento Preventivo</h5>
-                                <p class="card-text text-justify">
-                                    El servicio <strong>Preventivo</strong> nos permite conocer el estado de la báscula en un punto inicial y final de pruebas,
-                                    este servicio nos permite determinar las causas probables por las que el instrumento pueda fallar y nos permite
-                                    realizar recomendaciones oportunas para su mantenimiento.
-                                    <br>
-                                    Se realiza una revisión del sistema mecánico y electrónico,
-                                    revisión del estado de la escala del instrumento y ajuste del mismo usando pesas patrón calibradas.
-                                </p>
-                                <a href="/servicios.html" class="btn btn-secondary">Conoce más</a>
-                              </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-4">
+                    <div class="shadow p-2 text-center rounded">
+                        <img src="static/img/svg/maintenance.svg" alt="" class="w-25 img-fluid rounded-circle">
+                        <div class="card-body">
+                            <h5 class="card-title">Mantenimiento Preventivo</h5>
+                            <p class="card-text text-justify">
+                                El servicio <strong>Preventivo</strong> nos permite conocer el estado de la báscula en un punto inicial y final de pruebas,
+                                este servicio nos permite determinar las causas probables por las que el instrumento pueda fallar y nos permite
+                                realizar recomendaciones oportunas para su mantenimiento.
+                                <br>
+                                Se realiza una revisión del sistema mecánico y electrónico,
+                                revisión del estado de la escala del instrumento y ajuste del mismo utilizando pesas patrón calibradas.
+                            </p>
+                            <a href="/servicios.html" class="btn btn-Tprimary">Conoce más</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card shadow">
-                            <div class="bg-image hover-overlay ripple">
-                                <img src="static/img/svg/calibration.svg" alt="" class="w-25 img-fluid">
-                                <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Calibración</h5>
-                                <p class="card-text text-justify">
-                                    El servicio de <strong>Calibración</strong> se realiza basadado en un procedimiento basado en normas
-                                    y personal acreditado los errores de indicación del instrumento y la incertidumbre asociada en intervalos
-                                    especificos para determinar el desempeño del equipo y si cumple con el Sistema de Gestión de Calidad internos y externos.
-                                    <br>
-                                    El resultado de las pruebas genera un <strong>Certificado de Calibración</strong> en el cual se detalla los valores
-                                    obtenidos durante el proceso.
-                                </p>
-                                <a href="/servicios.html" class="btn btn-secondary">Conoce más</a>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="shadow p-2 text-center">
+                        <img src="static/img/svg/calibration.svg" alt="" class="w-25 img-fluid rounded-circle">
+                        <div class="card-body">
+                            <h5 class="card-title">Calibración</h5>
+                            <p class="card-text text-justify">
+                                El servicio de <strong>Calibración</strong> se realiza por procedimiento basado en normas
+                                y personal acreditado, en donde se toman los errores de indicación del instrumento y 
+                                la incertidumbre asociada en intervalos
+                                especificos para determinar el desempeño del equipo.
+                                <br>
+                                El resultado de la calibración genera un <strong>Certificado de Calibración</strong> en el cual se detalla los valores
+                                obtenidos durante el proceso.
+                                Sirve para revisar si el instrumento cumple con un Sistema de Gestión de.
+                            </p>
+                            <a href="/servicios.html" class="btn btn-Tprimary">Conoce más</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card shadow">
-                            <div class="bg-image hover-overlay ripple">
-                                <img src="static/img/svg/checking.svg" alt="" class="w-25 img-fluid">
-                                <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Inspección</h5>
-                                <p class="card-text text-justify">
-                                    El servicio de <strong>Inspección</strong> nos permite <strong>Evaluar la Conformidad</strong> del instrumento 
-                                    mediante un procedimiento basado en normas, que nos permite dictaminar si cumple o no con las leyes
-                                    aplicables.
-                                    <br>
-                                    El servicio evalua el instrumento para garantizar las condiciones metrológicas adecuadas en instrumentos
-                                    que se utilicen en transacciones comerciales o sirvan para determinar la tarifa de un servicio.
-                                    Generando un <strong>Dictamen de Inspección</strong> con los resultados.
-                                </p>
-                                <a href="/servicios.html" class="btn btn-secondary">Conoce más</a>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="shadow p-2 text-center">
+                        <img src="static/img/svg/checking.svg" alt="" class="w-25 img-fluid rounded-circle">
+                        <div class="card-body">
+                            <h5 class="card-title">Inspección</h5>
+                            <p class="card-text text-justify">
+                                El servicio de <strong>Inspección</strong> nos permite <strong>Evaluar la Conformidad</strong> del instrumento 
+                                mediante un procedimiento basado en normas, que nos permite dictaminar si cumple con las leyes
+                                aplicables.
+                                <br>
+                                Evaluamos el instrumento para garantizar que las condiciones metrológicas son
+                                adecuadas para transacciones comerciales o sirvan para determinar la tarifa de un servicio.
+                                Se entrega un <strong>Dictamen de Inspección</strong> con los resultados.
+                            </p>
+                            <a href="/servicios.html" class="btn btn-Tprimary">Conoce más</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="sec" id="about">
-        <div class="content">
-            <div class="mxw800p">
-                <h2 class="text-center">Quienes somos</h2>
-                <p>BÁSCULAS TEMA S.A. DE C.V., es una empresa orgullosamente mexicana creada con la finalidad de satisfacer 
-                    las necesidades de clientes como usted, con gran experiencia en sistemas de pesaje. 
-                    Contamos con altos estándares de calidad y servicio; 
-                    integrada por personal con vocación de servicio y amplia experiencia en el campo.
-                    dsgsfgsdsdsdsddsdssdd
-                </p>
-                <a href="#" class="btn btn-light">Conoce más</a>
+    <section id="about">
+        <div class="container text-center mt-5">
+            <h2 class="display-5 mb-4"><strong>Un poco sobre nosotros</strong></h2>
+            <br>
+            <div class="row">
+                <div class="d-flex col-md-4 justify-content-center align-items-center">
+                    <img src="static/img/svg/Tema_ORG.svg" alt="">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-text text-justify">
+                        <h3>Objetivo:</h3>
+                        <p>
+                            Proporcionar la seguridad de que sus
+                            instrumentos para pesar se encuentren en óptimas condiciones a
+                            través de servicios de mantenimiento preventivo y correctivo de alta
+                            calidad, con tiempos de respuesta de acuerdo a las necesidades de
+                            nuestros clientes y a precios competitivos.
+                        </p>
+                        <h3>Visión:</h3>
+                        <p>
+                            Estamos enfocados en ser una empresa líder en el mercado comprometido 
+                            a proporcionar productos y servicios de máxima calidad buscando satisfacer 
+                            de manera amplia las necesidades de nuestros clientes, por medio del trabajo 
+                            en equipo basándonos en el principio de honestidad.
+                        </p>
+                        <h3>Misión:</h3>
+                        <p>
+                            Ser la mejor opción para satisfacer las necesidades de nuestros clientes, 
+                            brindándoles la máxima seguridad y confianza mediante la experiencia en el 
+                            rubro, con tecnología avanzada, precios acorde al mercado y una remarcada calidad 
+                            en nuestros productos y servicios; nos basamos en el respeto por la diversidad y 
+                            nuestro compromiso para crear oportunidades excepcionales para el crecimiento personal 
+                            entre nuestro equipo y hacia nuestros clientes, en un ambiente cálido y confortable 
+                            que permita alcanzar una estabilidad comercial con nuestros consumidores.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <div class="row d-flex">
-        <div class="col-md-12">
-            <div class="brands-container">
-                <a href="#"><img src="static/img/svg/ohaus.svg" alt="" class="img-responsive w-10"></a>
-                <a href=""><img src="static/img/svg/Vishay_Logo.svg" alt="" class="img-responsive w-10"></a>
-                <a href=""><img src="static/img/svg/Tema_ORG.svg" alt="" class="img-responsive w-10"></a>
-                <a href=""><img src="static/img/ricelake.png" alt="" class="img-responsive w-15"></a>
-                <a href=""><img src="static/img/radwag.png" alt="" class="img-responsive w-10"></a>
+    <section id="work">
+        <div class="container">
+            <h2 class="text-center display-6"><strong>Nuestros trabajos</strong></h2>
+            <div class="row justify-content-center">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <h5><strong>Calibración Bascula de Alto Alcance</strong></h5>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="col-md-12 clearfix shadow border">
+                                    <div class="row align-items-center p-4 clearfix">
+                                        <div class="col-md-8 text-center">
+                                            <div class="text-justify">
+                                                <p>Calibración a báscula de alto alcance de 80 000 kg, se realizo
+                                                    servicio preventivo y después se procedió con la calibración
+                                                    utilizando 20 000 kg en pesas patrón calibradas y cargas de sustitución
+                                                    para llegar a un Max.' de 60 600 kg.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="static/img/Proyectos/IMG-20210201-WA0028.jpg" class="img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <h5><strong>Reparación Indicador de Peso</strong></h5>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="col-md-12 clearfix shadow border">
+                                    <div class="row align-items-center p-4 clearfix">
+                                        <div class="col-md-8 text-center">
+                                            <div class="text-justify">
+                                                <p>Calibración a báscula de alto alcance de 80 000 kg, se realizo
+                                                    servicio preventivo y después se procedió con la calibración
+                                                    utilizando 20 000 kg en pesas patrón calibradas y cargas de sustitución
+                                                    para llegar a un Max.' de 60 600 kg.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="static/img/Proyectos/IMG-20210201-WA0087.jpg" class="img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <h5><strong>Instalación Báscula Camionera</strong></h5>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="col-md-12 clearfix shadow border">
+                                    <div class="row align-items-center p-4 clearfix">
+                                        <div class="col-md-8 text-center">
+                                            <div class="text-justify">
+                                                <p>Calibración a báscula de alto alcance de 80 000 kg, se realizo
+                                                    servicio preventivo y después se procedió con la calibración
+                                                    utilizando 20 000 kg en pesas patrón calibradas y cargas de sustitución
+                                                    para llegar a un Max.' de 60 600 kg.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="static/img/Proyectos/IMG-20210201-WA0081.jpg" class="img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
             </div>
         </div>
-    </div>
-    <div class="fixed-action-btn text-center">
-        <a class="btn btn-cprimary text-white btn-floating" target="_blanck" href="https://api.whatsapp.com/send?phone=524423050896&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?">
-            <i class="fab fa-whatsapp display-7"></i>
-        </a>
-    </div>
-    <footer class="bg-cacent text-lg-start">
+    </section>
+    <footer class="text-lg-start bg-tprimary text-Tprimary">
         <!-- Copyright -->
-        <div class="text-center p-3 bg-csecondary">
+        <div class="text-center p-3">
           © 2020 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/">BASCULAS TEMA</a>
+          <a class="text-Tprimary btn" href="#">BASCULAS TEMA</a>
         </div>
+        <!-- Copyright -->
     </footer>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
