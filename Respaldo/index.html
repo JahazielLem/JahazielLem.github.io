@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="../web/static/css/style.css">
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg bg-white">
@@ -43,7 +43,7 @@
                         <a class="nav-link" href="#work">Nuestro trabajo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -91,7 +91,7 @@
                                 Se realiza una revisión del sistema mecánico y electrónico,
                                 revisión del estado de la escala del instrumento y ajuste del mismo utilizando pesas patrón calibradas.
                             </p>
-                            <a href="/servicios.html" class="btn btn-Tprimary">Conoce más</a>
+                            <a href="{{ url_for('servicios') }}" class="btn btn-Tprimary">Conoce más</a>
                         </div>
                     </div>
                 </div>
@@ -254,7 +254,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <img src="static/img/Proyectos/IMG-20210201-WA0081.jpg" class="img-fluid" alt="...">
+                                            <img src="static/img/Proyectos/IMG-20210201-WA0051.jpg" class="img-fluid" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -264,11 +264,59 @@
             </div>
         </div>
     </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row p-4">
+                <div class="col-md-4">
+                    <h2 class="text-center p-2">¿Tienes dudas? <span class="text-Tprimary">¡Contactanos!</span></h2>
+                    <h5><a href="#" class="btn text-Tsecondary">BÁSCULAS Y METROLOGÍA APLICADA TEMA S.A. DE C.V.</a></h5>
+                    <p>
+                        Teléfono: <span class="text-Tprimary strong">(55) 5863 6257</span>
+                        <br>
+                        Correo: <span class="text-Tprimary strong">informes@basculastema.com.mx</span>
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <form action="" method="post">
+                        <form class="">
+                            <div class="row g-3">
+                                <div class="col-md">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                                        <label for="nombre">Nombre</label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="celular" placeholder="(55) 5863 6257">
+                                        <label for="email">Numero telefonico</label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                        <label for="email">Correo Electrónico</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="¿En que te podemos ayudar?" id="textArea" style="height: 100px"></textarea>
+                                <label for="textArea">¿En que te podemos ayudar?</label>
+                            </div>
+                            <div class="text-center mt-2 p-2">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="text-lg-start bg-tprimary text-Tprimary">
         <!-- Copyright -->
         <div class="text-center p-3">
           © 2020 Copyright:
-          <a class="text-Tprimary btn" href="#">BASCULAS TEMA</a>
+          <a class="text-Tprimary btn" href="#">BÁSCULAS Y METROLOGÍA APLICADA TEMA S.A. DE C.V.</a>
         </div>
         <!-- Copyright -->
     </footer>
